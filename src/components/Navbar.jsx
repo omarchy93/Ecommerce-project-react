@@ -11,10 +11,7 @@ const Navbar = () => {
             ECard.
           </NavLink>
         </div>
-
-        <LoginBtn />
-
-        {/* <CardShow /> */}
+        {localStorage.getItem("token") === null ? <LoginBtn /> : <CardShow />}
       </div>
     </div>
   );

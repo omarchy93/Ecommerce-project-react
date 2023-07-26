@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
+  // navigate for get email;
   const navigate = useNavigate();
 
   const getOtp = (e) => {
