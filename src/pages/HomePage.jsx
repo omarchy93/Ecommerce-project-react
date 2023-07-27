@@ -15,7 +15,7 @@ const HomePage = () => {
   return (
     <div>
       <Layout>
-        {data.length > 0 ? <ProductCard data={data} /> : "its lodding"}
+        {data.length > 0 ? <ProductCard data={data} /> : "its loading...."}
       </Layout>
     </div>
   );

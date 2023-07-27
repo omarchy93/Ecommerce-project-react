@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { createCard } from "../apiRequest/api";
 
 const ProductCard = ({ data }) => {
@@ -21,7 +21,7 @@ const ProductCard = ({ data }) => {
       <div className="grid gap-x-3 gap-y-4 grid-cols-4">
         {data.map((item, index) => {
           return (
-            <Link key={index.toString()} to={"/"}>
+            <div key={index.toString()} to={"/"}>
               <div className="card w-96 bg-base-100 shadow-xl">
                 <figure className="px-10 pt-10">
                   <img
@@ -45,7 +45,7 @@ const ProductCard = ({ data }) => {
                   </div>
                 </div>
               </div>
-            </Link>
+            </div>
           );
         })}
       </div>
